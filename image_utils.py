@@ -3,7 +3,7 @@ import numpy as np
 from scipy.signal import convolve2d
 
 def load_image(path):
-    clean_image - suppress_noise(image_array)
+    clean_image = suppress_noise(image_array)
     edges = detect_edges(clean_image)
     binary_edges = convert_to_binary(edges, threshold=50)
     save_binary_image(binary_edges, 'my_edges.png')
